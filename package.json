@@ -1,0 +1,24 @@
+{
+  "name": "Study_Typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "greeter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhongZhen-98/Study_Typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhongZhen-98/Study_Typescript/issues"
+  },
+  "homepage": "https://github.com/ZhongZhen-98/Study_Typescript#readme",
+  "dependencies": {
+    "typescript": "^4.3.4"
+  }
+}
