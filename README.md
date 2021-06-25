@@ -12,9 +12,6 @@ Crawling
 DL
 - Boostcouse
 
-Django
-- https://docs.djangoproject.com/ko/3.2/intro/tutorial01/
-
 Game
 - 📝
 
