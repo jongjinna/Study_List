@@ -1,22 +1,27 @@
 "use strict";
-// function printLabel(labeledObj: { label: string }) {
-//   console.log(labeledObj.label);
-// }
-// let myObj = {size: 10, label: "Size 10 Object"};
-// printLabel(myObj);
-function printLabel(labeledObj) {
-    console.log(labeledObj.label);
+// // function printLabel(labeledObj: { label: string }) {
+// //   console.log(labeledObj.label);
+// // }
+// // let myObj = {size: 10, label: "Size 10 Object"};
+// // printLabel(myObj);
+function createClock(ctor, hour, minute) {
+    return new ctor(hour, minute);
 }
-var myObj = { size: 10, label: "Size 10 Object" };
-printLabel(myObj);
-function createSquare(config) {
-    var newSquare = { color: "white", area: 100 };
-    if (config.color) {
-        newSquare.color = config.color;
+var DigitalClock = /** @class */ (function () {
+    function DigitalClock(h, m) {
     }
-    if (config.width) {
-        newSquare.area = config.width * config.width;
+    DigitalClock.prototype.tick = function () {
+        console.log("beep beep");
+    };
+    return DigitalClock;
+}());
+var AnalogClock = /** @class */ (function () {
+    function AnalogClock(h, m) {
     }
-    return newSquare;
-}
-var mySquare = createSquare({ color: "black" });
+    AnalogClock.prototype.tick = function () {
+        console.log("tick tock");
+    };
+    return AnalogClock;
+}());
+var digital = createClock(DigitalClock, 12, 17);
+var analog = createClock(AnalogClock, 7, 32);
