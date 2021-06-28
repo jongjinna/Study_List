@@ -151,3 +151,78 @@
 //       console.log("beep beep");
 //   }
 // }
+
+// // 확장하기
+// interface Shape {
+//   color: string;
+// }
+
+// interface Square extends Shape {
+//   sideLength: number;
+// }
+
+// let square = {} as Square;
+// square.color = "blue";
+// square.sideLength = 10;
+
+// interface Shape {
+//   color: string;
+// }
+
+// interface PenStroke {
+//   penWidth: number;
+// }
+
+// interface Square extends Shape, PenStroke {
+//   sideLength: number;
+// }
+
+// let square = {} as Square;
+// square.color = "blue";
+// square.sideLength = 10;
+// square.penWidth = 5.0;
+
+// // 하이브리드 타입
+// interface Counter {
+//   (start: number): string;
+//   interval: number;
+//   reset(): void;
+// }
+
+// function getCounter(): Counter {
+//   let counter = (function (start: number) { }) as Counter;
+//   counter.interval = 123;
+//   counter.reset = function () { };
+//   return counter;
+// }
+
+// let c = getCounter();
+// c(10);
+// c.reset();
+// c.interval = 5.0;
+
+// class Control {
+//   private state: any;
+// }
+
+// interface SelectableControl extends Control {
+//   select(): void;
+// }
+
+// class Button extends Control implements SelectableControl {
+//   select() { }
+// }
+
+// class TextBox extends Control {
+//   select() { }
+// }
+
+// // Error: Property 'state' is missing in type 'Image'.
+// class Image implements SelectableControl {
+//   private state: any;
+//   select() { }
+// }
+
+// class Location {
+
+// }
