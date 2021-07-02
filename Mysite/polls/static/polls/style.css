@@ -1,0 +1,13 @@
+li a {
+  color: green;
+}
+
+body {
+  background: white url("images/background.gif") no-repeat;
+}
+
+.titlename {
+  color: blue;
+  font-size: 50px;
+  font-weight: bold;
+}
