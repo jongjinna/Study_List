@@ -1,0 +1,1 @@
+declare function ChannelIO(a: string): void; 
