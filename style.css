@@ -1,0 +1,59 @@
+/*  CSS  */
+
+/* 전체값 */
+
+a{
+  color: none;
+  text-decoration: none;
+}
+h1{
+  color:orange;
+  font-size:50px;
+  border-bottom:1px solid black;
+  padding:20px;
+  margin:0;
+}
+
+
+/* id값 */
+
+#searchDiv{
+  text-align: center;
+}
+/* #search{
+  padding:20px;
+  width:200px;
+  height:200px;
+} */
+#up_button{
+  text-align: right;
+}
+#login_ch{
+  text-align: center;
+}
+/* #posts_ol{
+  
+} */
+
+/* 자동화 시스템 */
+@media(max-width:800px) { 
+  #grid{
+    display:block;
+  }
+  #button_ol{
+    border-right:none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
+
+
+.container{
+  width: 300px;
+}
+
+#img{
+  width: 100px;
+}
+  
