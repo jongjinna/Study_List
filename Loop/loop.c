@@ -56,5 +56,37 @@ int main(void) {
   //     printf("  %d x %d = %d \n", i, j, i*j);
   //   }
   // }
+
+  // for (int i = 0; i <= 5; i++) {
+  //   for (int j = 0; j <= i; j++) {
+  //     printf("*");
+  //   }
+  //   printf("\n");
+  // }
+
+  // for (int i = 0; i <= 5; i++) {
+  //   for (int j = 1; j <= 5-i; j++) {
+  //     printf(" ");
+  //   }
+  //   for (int k = 0; k <= i; k++) {
+  //     printf("*");
+  //   }
+  //   printf("\n");
+  // } 
+
+  // 피라미드를 쌓아라 프로젝트
+  int floor;
+  printf("몇 층으로 쌓을 것인가? : ");
+  scanf("%d", &floor);
+  for (int i = 1; i <= floor; i++) {
+    for (int j = 1; j<= floor-i; j++){
+      printf(" ");
+    }
+    for (int k = 1; k<=2*i-1; k++) {
+      printf("*");
+    }
+    printf("\n");
+  }
+
   return 0;
 }
