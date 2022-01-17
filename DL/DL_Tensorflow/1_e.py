@@ -21,3 +21,6 @@ for i in range(1000):
   # assign_sub 는 python의 a -= b 와 같은 역할
   if i % 10 == 0:
     print("{:5}|{:10.4}|{:10.4}|{:10.6f}".format(i, W.numpy(), b.numpy(), cost))
+    
+print(W*5+b)
+print(W*2.5+b)
