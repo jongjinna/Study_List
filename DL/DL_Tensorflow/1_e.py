@@ -8,7 +8,7 @@ y_data = [1, 2, 3, 4, 5]
 W = tf.Variable(2.9)
 b = tf.Variable(0.5)
 
-learning_rate = 0.01
+learning_rate = 0.001
 
 for i in range(1000):
   # Gradient descent
