@@ -44,6 +44,20 @@ int main(void) {
   //   }
   // }
 
+  // and(&&) & or(||)
+  int a = 10;
+  int b = 11;
+  int c = 12;
+  int d = 13;
+  // if (a == b && c == d) {
+  //   printf("a == b && c == d\n");
+  // }
+  // else
+  // {
+  //   printf("a != b || c != d\n");
+  // }
   
+
+
   return 0;
 }
