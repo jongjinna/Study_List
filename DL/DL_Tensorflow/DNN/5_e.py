@@ -134,7 +134,7 @@ network = create_model_function(label_dim)
 optimizer = tf.keras.optimizers.Adam(learning_rate=learning_rate)
 
 """ Writer """
-checkpoint_dir = 'checkpoints'
+checkpoint_dir = './DL/DL_Tensorflow/DNN/checkpoints'
 logs_dir = './DL/DL_Tensorflow/DNN/logs'
 
 model_dir = 'nn_softmax'
