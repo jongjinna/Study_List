@@ -10,6 +10,6 @@ Dataset load 및 tf.data.Dataset 구축	test 데이터셋 input_data 차원 맞�
 네트워크 설계	ReLU 설계	ReLU를 Activation function으로 사용한다.	Pass
 Loss functionn 및 Optimizer 정의	Sparse Cross entropy loss	Sparse Cross entropy loss function을 정의한다.	Pass
 Loss functionn 및 Optimizer 정의	Adam	Adam optimizer를 정의한다.	Pass
-Metric 정의	Metric	Accuracy를 정의한다.	Fail
+Metric 정의	Metric	Accuracy를 정의한다.	Pass
 Model 학습	model.fit() 사용법	Model을 학습한다.	Pass
 Model 평가	model.evaluation()	Model이 잘 학습되었는지 평가한다.	Pass
