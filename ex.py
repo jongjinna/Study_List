@@ -1,4 +1,6 @@
-a = [1,2,3]
-print(a[0])
-print(a[-1])
-print(a[-2])
+import sklearn
+
+if input("would you like to do something?(y/n): ") == "y":
+    print("ok")
+else:
+    print("so, what do you wanna do?") # this is the same as the above linen
