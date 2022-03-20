@@ -15,7 +15,9 @@ while 1:
     break
 
   # frame = frame[200:520, 500:780]
-  cv2.imshow('camera', frame)
+
+  flip_vertical = cv2.flip(frame, 1)
+  cv2.imshow('camera', flip_vertical)
 
   if cv2.waitKey(1) == ord('q'):
     print("quit")
