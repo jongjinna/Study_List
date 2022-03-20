@@ -6,14 +6,26 @@ BasicGrammer
 - Nadocoding
 - W3SCHOOL
 
+COUSERA
+- coursera
+
 Crawling
 - Nadocoding
 
+DataAnalysis
+- Currency Futures
+- with SQL
+- with Excel
+
 DL
-- Boostcouse
+- DL_Tensorflow(Boostcouse)
+- OpenCV(NadoCoding)
 
 Game
-- 📝
+- Sudoku
 
 RL
-- 📝
+- Sung Kim..
+
+ex.py
+- check something
