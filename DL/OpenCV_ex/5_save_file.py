@@ -11,7 +11,7 @@ import numpy as np
 # print(result)
 
 # save video
-cap = cv2.VideoCapture('DL/OpenCV_ex/video.mp4')
+cap = cv2.VideoCapture('./DL/OpenCV_ex/video.mp4')
 
 fourcc = cv2.VideoWriter_fourcc(*'XVID') # 코덱 정의
 
@@ -22,15 +22,18 @@ fps = cap.get(cv2.CAP_PROP_FPS)
 out = cv2.VideoWriter('DL/OpenCV_ex/video_save.avi', fourcc, fps, (width, height))
 
 while cap.isOpened():
-  ret, frame = cap.read()
+  ret, frame = cap.read() # ret: True or False, frame: numpy.ndarray 받아온 이미지(프레임)
   if not ret:
+    print("there is no frame")
     break
-  
+
   out.write(frame)
-  cv2.imshow('frame', frame)
-  if cv2.waitKey(1) & ord('q'):
+  cv2.imshow('video', frame)
+
+  if cv2.waitKey(1) == ord('q'):
+    print("quit")
     break
 
 out.release()
 cap.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows() 
