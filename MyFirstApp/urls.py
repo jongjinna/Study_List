@@ -10,7 +10,10 @@ urlpatterns = [
     # path('update/<int:id>/', views.update),
 
     path('', views.IndexView.as_view(), name='pindex'),
-    path('/<int:pk>/', views.DetailView.as_view(), name='detail'),
-    path('/<int:pk>/results/', views.ResultsView.as_view(), name='results'),
-    path('/<int:question_id>/vote/', views.vote, name='vote'),
+    path('<int:pk>/', views.DetailView.as_view(), name='detail'),
+    path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),
+    path('<int:question_id>/vote/', views.vote, name='vote'),
+
+    path('Diary/', views.diarylst, name='diarylst'),
+    path('Diary/<int:diary_id>/', views.diary, name='diary'),
 ]

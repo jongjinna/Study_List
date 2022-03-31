@@ -5,7 +5,7 @@ from django.template import loader
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
-from .models import Question, Choice
+from .models import Question, Choice, Diary
 
 # Create your views here.
 # 생활코딩 코드 ~
@@ -163,3 +163,15 @@ def vote(request, question_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('MyFirstApp:results', args=(question.id,)))
+
+def diarylst(request):
+    latest_diary_list = Diary.objects.order_by('-pub_date')
+    template = loader.get_template('MyFirstApp/diarylst.html')
+    context = {
+        'latest_diary_list': latest_diary_list,
+    }
+    return HttpResponse(template.render(context, request))
+
+def diary(request, diary_id):
+    onediary = get_object_or_404(Diary, pk=diary_id)
+    return render(request, 'MyFirstApp/diary.html', {'onediary': onediary})
