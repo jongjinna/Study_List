@@ -1,7 +1,7 @@
 import time
 from selenium import webdriver
 
-browser = webdriver.Chrome() #"./chromedriver.exe"cls
+browser = webdriver.Chrome('~/Downloads/chromedriver.exe')
 
 #naver 열기
 browser.get("http://naver.com")
