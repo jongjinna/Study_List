@@ -1,3 +1,4 @@
+package JumpToJavaWithDuoen;
 public class Ex04 {
   public static void num1(String[] args) {
     System.out.println("everywhere");
