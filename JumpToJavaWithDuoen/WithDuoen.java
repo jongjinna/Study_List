@@ -1,5 +1,4 @@
 package JumpToJavaWithDuoen;
-import javax.annotation.processing.SupportedOptions;
 
 public class WithDuoen {
   public static void main(String[] args) {
