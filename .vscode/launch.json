@@ -2,10 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Ex03",
+      "request": "launch",
+      "mainClass": "JumpToJavaWithDuoen.Ex03",
+      "projectName": "Study_Java_fb862df9"
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-WebsiteApplication<website>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "mainClass": "com.jongjinna.website.WebsiteApplication",
+      "projectName": "website",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-HelloLombok<website>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.jongjinna.website.HelloLombok",
       "projectName": "website",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
