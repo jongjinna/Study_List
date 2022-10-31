@@ -1,0 +1,14 @@
+MediaPipe on Google Colab
+MediaPipe Face Detection Colab
+MediaPipe Face Mesh Colab
+MediaPipe Hands Colab
+MediaPipe Holistic Colab
+MediaPipe Objectron Colab
+MediaPipe Pose Colab
+MediaPipe Pose Classification Colab (Basic)
+MediaPipe Pose Classification Colab (Extended)
+MediaPipe Selfie Segmentation Colab
+
+https://makernambo.com/154
+
+!pip install mediapipe

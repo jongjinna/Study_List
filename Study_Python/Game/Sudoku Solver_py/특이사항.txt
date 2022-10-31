@@ -1,0 +1,6 @@
+그림화 하기
+게임화 하기
+
+스도쿠 만들기 #solve program이 아닌 make program
+
+출처: 유튜브: Computerphile의 Python Sudoku Solver-Computerphile
